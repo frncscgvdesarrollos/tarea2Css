@@ -1,0 +1,246 @@
+*{
+    padding:0;
+    margin:0;
+}
+#contenedor-total{
+    width: 100%;
+    background: linear-gradient(to bottom,rgb(36, 71, 138),rgb(22, 49, 99));
+}
+/* nav de la pagina  */
+.barra {
+    border-radius: 0% 0% 50% 50%;
+    background:linear-gradient(to top,#222,rgb(24, 51, 207));
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    border-bottom: 5px solid white;
+}
+.barra-titulo {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    line-height: 3em;
+    width: 80%;
+    position: relative;
+    transform: translateX(12.5%);
+    
+}
+.barra-menu {
+    width: 20%;
+}
+.icono-menu {
+    float: right;
+    height: 3vh;
+    font-size: 25px;  
+    padding: 7.5%;
+    color: rgb(85, 132, 219);
+    border: 2px solid rgb(15, 84, 163);  
+    border-radius: 15px;
+    background-color: rgb(24, 51, 207);
+}
+.icono-menu:hover {
+    color: white;
+}
+.barra-menu:hover > .barra-menu-item{
+    visibility: visible;
+}
+.barra-menu-item{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 3em;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    visibility: hidden;
+    list-style: none;
+    transform: translateY(10vh);
+    margin-top: 1%;
+    height: 10vh;
+    background: linear-gradient(240deg, rgba(76, 128, 177, 0.5), rgb(77, 69, 148));
+    border-bottom: 5px solid white;
+    border-left: 2px solid white;
+    border-radius: 15px;
+}
+.barra-menu-item:hover {
+    text-decoration: underline;
+}
+.imagen-png {
+    position: relative;
+    float: right;
+    transition: all 2s;
+    border-radius: 100%;
+    border:3px solid rgba(46, 78, 219, 0.5);
+}
+.imagen-png:hover {
+    -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+    mask-image: radial-gradient(circle, black 90%, rgba(46, 78, 219, 0.5) 10%);
+}
+ /* seccion home de la pagina  */
+#home {    
+    z-index: 90;
+    height: 90vh;
+    background-image: url(https://profile.es/wp-content/media/que-son-paradigmas-programacion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 5px solid white;
+}
+.home1 {
+    margin-left: 7.5%;
+    padding: 50px;
+    height: 55%;
+}
+.home1 p {
+    line-height: 2.5em;
+    height: 70px;
+    border-bottom: 5px solid white;
+    border-radius: 10px;
+    text-align: center;
+    width: 55%;
+    font-family: 'Edu NSW ACT Foundation';
+    position: relative;
+    top: 55%;
+    font-size: 28px;
+    color:whitesmoke;
+    text-shadow: 0px 0px 10px rgb(24, 51, 207);
+    background: linear-gradient(240deg, rgba(76, 78, 177, 0.5), rgb(48, 50, 182));
+    
+}
+h1 {
+    display: inline-block;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+    position: relative;
+    top: 30%;
+    text-shadow: 0px 0px 10px rgb(24, 51, 207);
+    color:whitesmoke;
+    background: linear-gradient(240deg, rgba(76, 78, 177, 0.5), rgb(48, 50, 182));
+    border-bottom: 5px solid white;
+    border-radius: 10px;
+}
+.home2 {
+    height: 45%;
+    padding: 5%;
+    
+}
+.home2-button { 
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Roboto Mono', monospace;
+    border: 5px solid white; 
+    width:20%;
+    height: 70px;
+    background: linear-gradient(240deg, rgba(46, 61, 131, 0.5), rgb(48, 117, 182));
+    border-radius: 9px;
+    margin-left: 7%;
+    transition: all 1s;
+}
+.home2-button:hover {
+    background: linear-gradient(90deg, rgba(46, 61, 131, 0.5), rgb(48, 117, 182));
+    border: 5px solid rgb(21, 36, 121); 
+}
+/* el footer de la pagina  */
+footer {
+    display: inline-block;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    border-radius: 50% 50% 0% 0%;
+    height: 10vh;
+    background:linear-gradient(to bottom,#222,rgb(24, 51, 207));
+    border-top: 5px solid white;
+}
+.social {
+    display: flex;
+}
+.icono-social {
+    position: relative;
+    transform: translate(50%,20px);
+    width: 33%;
+    font-size: 30px;
+    color: rgb(48, 117, 182);
+}
+.volver {
+    float: right;
+    height: 3vh;
+    padding: 1.5%;
+    transform: translateY(-50%);
+    font-size: 30px;  
+    color: rgb(85, 132, 219);
+    border: 2px solid rgb(15, 84, 163);  
+    border-radius: 15px;
+    background-color: rgb(24, 51, 207);
+}
+.volver:hover {
+    color: white;    
+}
+
+/* seciones de la pagina  */
+.seccion {
+    background-color:rgb(36, 71, 138);
+    height: 80vh;
+    padding: 10%;
+}
+
+.titulo-seccion{
+    width: 47%;
+    font-family: 'Roboto Mono', monospace;
+    color:whitesmoke;
+    background: linear-gradient(240deg, rgba(76, 78, 177, 0.5), rgb(48, 50, 182));
+    border-bottom: 5px solid white;
+    border-radius: 10px;
+    font-size: 35px;
+    font-weight: 700;}
+.parrafo-seccion{
+    color: wheat;
+    font-weight: 500;
+    padding: 50px;
+    font-size: 25px;
+    border: 5px solid white;
+    border-radius: 15px;
+    background: linear-gradient(240deg, rgba(76, 78, 177, 0.5), rgb(48, 50, 182));
+}
+.seccion-uno {
+    text-align: right;
+    margin-top: 10vh;
+    display: flex;
+    flex-flow: column wrap;
+    background-image: url("https://panorama.oei.org.ar/_dev2/wp-content/uploads/2021/03/c-lenguaje-programacion.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-sizing: content-box;
+}
+.uno{
+   text-align: left; 
+   position: relative;
+   margin-left: 54%;
+   margin-bottom: 10%;
+}
+.seccion-dos{
+    background-image: url("https://www.liderempresarial.com/wp-content/uploads/2021/08/tipos-de-algoritmos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    margin-bottom: 10vh;
+}
+.dos{
+    position: relative;
+    margin-bottom: 10%;
+}
+.seccion-tres {
+    background-image: url("https://assets.bedu.org/images/5-lenguajes-programaci%C3%B3n.jpg?w=1200");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+}
+.tres{
+    position: relative;
+    margin-left: 53%;
+}
+.tres-parrafo {
+    font-size: 20px !important;
+}
